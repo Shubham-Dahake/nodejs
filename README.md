@@ -18,7 +18,7 @@ The application also includes a message mentioning a webhook and the 18 May DevO
 
 The following diagram illustrates how the application works.
 
-![]
+![Architectural Diagram](Architectural.png)
 
 ### Architecture Components
 
