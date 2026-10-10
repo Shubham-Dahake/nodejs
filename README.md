@@ -18,7 +18,7 @@ The application also includes a message mentioning a webhook and the 18 May DevO
 
 The following diagram illustrates how the application works.
 
-![Architectural Diagram](Architectural.png)
+![Architectural Diagram](Architecture.png)
 
 ### Architecture Components
 
@@ -53,12 +53,9 @@ The application receives an HTTP GET request from the user's browser.
 ## 4. Output
 
 When the user accesses the home page, the application displays the following message:
+![Output](output.png)
 
-**Expected output:**
 
-```text
-Hiii i am shubham from sambhajinagar, added webhook, we are from 18 May Devops batch
-```
 
 ### Output Process
 
