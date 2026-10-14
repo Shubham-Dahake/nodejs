@@ -82,37 +82,43 @@ App listening at http://localhost:3000
 - Supports process monitoring.
 - Can configure applications to start automatically after a server reboot.
 
-### PM2 Commands
+## 🚀 Deployment Guide
 
-Start the application using PM2:
+### 1. Launch an EC2 instance on AWS
 
-```bash
-pm2 start app.js --name jenkins-node-app
-```
+### 2. Push the code to GitHub
 
-Check running applications:
+### 3. Install the required packages
 
 ```bash
-pm2 list
+sudo yum install node git -y
 ```
-
-View application logs:
+### 4. Clone the repository from GitHub
 
 ```bash
-pm2 logs jenkins-node-app
+sudo git clone <url>
 ```
 
-Restart the application:
+### 5. Install the required packages:
 
 ```bash
-pm2 restart jenkins-node-app
+sudo yum install npm
+sudo npm install
+```
+To start website:
+
+```
+node app.js
 ```
 
-Stop the application:
+To start in background:
 
 ```bash
-pm2 stop jenkins-node-app
+sudo npm install -g pm2
+sudo pm2 start app.js
 ```
+
+Run the following SQL commands:
 
 **Note:** PM2 is not included in the provided `package.json`. These commands are for use if PM2 is installed and you choose to run the application with it.
 
